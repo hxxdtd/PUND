@@ -1,0 +1,33 @@
+{
+    "overall": {
+        "task": "classifier",
+        "attacker": "adv_search",
+        "logger": "json",
+        "resume": null
+    },
+    "task": {
+        "concept_type": "id",
+        "concept": "angelina jolie",
+        "model_name_or_path": "stable-diffusion/diffusers_ckpt/ORI",
+        "target_ckpt": "stable-diffusion/diffusers_ckpt/ORI/unet/diffusion_pytorch_model.bin",
+        "erase_ckpt": "stable-diffusion/diffusers_ckpt/UCE/id/jolie/unet/diffusion_pytorch_model.bin",
+        "cache_path": ".cache",
+        "dataset_path": "files/dataset/id/jolie",
+        "criterion": "l2"
+    },
+    "attacker": {
+        "insertion_location": "suffix_k",
+        "k": 1,
+        "total_data": 1000,
+        "eval_seed": 0,
+        "text_grad": {
+            "lr": 0.1,
+            "weight_decay": 0.1
+        }
+    },
+    "logger": {
+        "json": {
+            "root": "files/results/id/jolie"
+        }
+    }
+}
