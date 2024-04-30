@@ -22,7 +22,7 @@ We use the Diffusers version of the SD model and require converting the original
 python stable-diffusion/train-scripts/compvis2diffusers.py
 ```
 
-Additionally, download the following modules: `vae`, `tokenizer`, and `text_encoder`, and place them in the folder `stable-diffusion/diffusers_ckpt/ORI`.
+Additionally, download the following modules: `vae`, `tokenizer`, and `text_encoder` from [here](https://huggingface.co/CompVis/stable-diffusion-v1-4/tree/main), and place them in the folder `stable-diffusion/diffusers_ckpt/ORI`.
 
 We provide unlearned model checkpoints for object (e.g., *Jeep*) and ID (e.g., *Angelina Jolie*), which are placed in the folder `stable-diffusion/diffusers_ckpt`. The download links are provided in the table below:
 
@@ -40,7 +40,7 @@ Taking the restoration of *Angelina Jolie* as an example, we first generate imag
 python src/execs/generate_dataset.py --prompts_path prompts/id/jolie.csv --concept jolie --save_path files/dataset/id --device cuda:0
 ```
 
-(Optional but recommended): Use the classifiers to choose the good geenrated images for embedding search by running:
+(Optional but recommended): Use the classifiers to choose the good generated images for embedding search by running:
  
  ```
  python src/execs/choose_dataset.py --concept_type 'id' --concept 'angelina jolie' --threshold 0.99
