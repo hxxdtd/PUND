@@ -1,4 +1,4 @@
-# Probing Unlearned Diffusion Models: A Transferable Adversarial Attack Perspective
+# Probing Unlearned Diffusion Models: A Transferable Adversarial Attack Perspective [\[arXiv\]](http://arxiv.org/abs/2404.19382)
 
 This repository contains the official implementation of the paper titled "**P**robing **Un**learned **D**iffusion Models: A Transferable Adversarial Attack Perspective".
 
@@ -63,3 +63,16 @@ We provide adversarial embeddings for the restoration of object (e.g., *Jeep*) a
 ## Acknowledgment
 
 This repository is built upon the official codebase of [UnlearnDiff](https://github.com/OPTML-Group/Diffusion-MU-Attack), and we express gratitude for their helpful contributions.
+
+## Citation
+
+```
+@misc{han2024probing,
+      title={Probing Unlearned Diffusion Models: A Transferable Adversarial Attack Perspective}, 
+      author={Xiaoxuan Han and Songlin Yang and Wei Wang and Yang Li and Jing Dong},
+      year={2024},
+      eprint={2404.19382},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
